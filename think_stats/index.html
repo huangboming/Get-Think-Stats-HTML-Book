@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="hevea 2.23" name="generator"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Think Stats
+</title>
+<link href="thinkstats2.css" rel="stylesheet" type="text/css"/>
+</head>
+<body style = "background-color:beige">
+<!--HEVEA command line is: /usr/bin/hevea macros.hva -O -e latexonly htmlonly thinkstats2 -->
+<!--HACHA command line is: /usr/bin/hacha thinkstats2.html -->
+<div id="main">
+<div id="colorbar"></div>
+<div id="content">
+<div class="notice">
+<p>This HTML version of "Think Stats 2e" is provided for convenience, but it
+is not the best format for the book.  In particular, some of the
+math symbols are not rendered correctly.
+
+</p><p style="margin-bottom:0">You might prefer to read
+the <a href="https://greenteapress.com/thinkstats2/thinkstats2.pdf">PDF version</a>, or
+you can buy a hard copy from
+<a href="https://amzn.to/2gBBW7v">Amazon</a>.
+</p></div>
+<p><span style="font-size:x-large">Think Stats: Exploratory Data Analysis in Python</span></p><p><span style="font-size:large">Allen B. Downey</span></p><p>Version 2.1.0</p><p><br/>
+<br/>
+</p><p>Copyright 2014 Allen B. Downey</p><p><br/>
+<br/>
+</p><p>Permission is granted to copy, distribute, and/or modify this document
+under the terms of the Creative Commons 
+Attribution-NonCommercial-ShareAlike 4.0 International
+Unported License, which is available at
+<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><span style="font-family:monospace">http://creativecommons.org/licenses/by-nc-sa/4.0/</span></a>.</p>
+<ul>
+<li><a href="thinkstats2001.html">Preface</a>
+<ul>
+<li><a href="thinkstats2001.html#sec2">How I wrote this book</a>
+</li><li><a href="thinkstats2001.html#sec3">Using the code</a>
+</li><li><a href="thinkstats2001.html#sec4">Contributor List</a>
+</li></ul>
+</li><li><a href="thinkstats2002.html"><span style="font-size:medium">Exploratory data analysis</span></a>
+<ul>
+<li><a href="thinkstats2002.html#sec6"><span style="font-size:medium">A statistical approach</span></a>
+</li><li><a href="thinkstats2002.html#sec7"><span style="font-size:medium">The National Survey of Family Growth</span></a>
+</li><li><a href="thinkstats2002.html#sec8"><span style="font-size:medium">Importing the data</span></a>
+</li><li><a href="thinkstats2002.html#sec9"><span style="font-size:medium">DataFrames</span></a>
+</li><li><a href="thinkstats2002.html#sec10"><span style="font-size:medium">Variables</span></a>
+</li><li><a href="thinkstats2002.html#sec11"><span style="font-size:medium">Transformation</span></a>
+</li><li><a href="thinkstats2002.html#sec12"><span style="font-size:medium">Validation</span></a>
+</li><li><a href="thinkstats2002.html#sec13"><span style="font-size:medium">Interpretation</span></a>
+</li><li><a href="thinkstats2002.html#sec14"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2002.html#sec15"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2003.html"><span style="font-size:medium">Distributions</span></a>
+<ul>
+<li><a href="thinkstats2003.html#sec17"><span style="font-size:medium">Histograms</span></a>
+</li><li><a href="thinkstats2003.html#sec18"><span style="font-size:medium">Representing histograms</span></a>
+</li><li><a href="thinkstats2003.html#sec19"><span style="font-size:medium">Plotting histograms</span></a>
+</li><li><a href="thinkstats2003.html#sec20"><span style="font-size:medium">NSFG variables</span></a>
+</li><li><a href="thinkstats2003.html#sec21"><span style="font-size:medium">Outliers</span></a>
+</li><li><a href="thinkstats2003.html#sec22"><span style="font-size:medium">First babies</span></a>
+</li><li><a href="thinkstats2003.html#sec23"><span style="font-size:medium">Summarizing distributions</span></a>
+</li><li><a href="thinkstats2003.html#sec24"><span style="font-size:medium">Variance</span></a>
+</li><li><a href="thinkstats2003.html#sec25"><span style="font-size:medium">Effect size</span></a>
+</li><li><a href="thinkstats2003.html#sec26"><span style="font-size:medium">Reporting results</span></a>
+</li><li><a href="thinkstats2003.html#sec27"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2003.html#sec28"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2004.html"><span style="font-size:medium">Probability mass functions</span></a>
+<ul>
+<li><a href="thinkstats2004.html#sec30"><span style="font-size:medium">Pmfs</span></a>
+</li><li><a href="thinkstats2004.html#sec31"><span style="font-size:medium">Plotting PMFs</span></a>
+</li><li><a href="thinkstats2004.html#sec32"><span style="font-size:medium">Other visualizations</span></a>
+</li><li><a href="thinkstats2004.html#sec33"><span style="font-size:medium">The class size paradox</span></a>
+</li><li><a href="thinkstats2004.html#sec34"><span style="font-size:medium">DataFrame indexing</span></a>
+</li><li><a href="thinkstats2004.html#sec35"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2004.html#sec36"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2005.html"><span style="font-size:medium">Cumulative distribution functions</span></a>
+<ul>
+<li><a href="thinkstats2005.html#sec38"><span style="font-size:medium">The limits of PMFs</span></a>
+</li><li><a href="thinkstats2005.html#sec39"><span style="font-size:medium">Percentiles</span></a>
+</li><li><a href="thinkstats2005.html#sec40"><span style="font-size:medium">CDFs</span></a>
+</li><li><a href="thinkstats2005.html#sec41"><span style="font-size:medium">Representing CDFs</span></a>
+</li><li><a href="thinkstats2005.html#sec42"><span style="font-size:medium">Comparing CDFs</span></a>
+</li><li><a href="thinkstats2005.html#sec43"><span style="font-size:medium">Percentile-based statistics</span></a>
+</li><li><a href="thinkstats2005.html#sec44"><span style="font-size:medium">Random numbers</span></a>
+</li><li><a href="thinkstats2005.html#sec45"><span style="font-size:medium">Comparing percentile ranks</span></a>
+</li><li><a href="thinkstats2005.html#sec46"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2005.html#sec47"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2006.html"><span style="font-size:medium">Modeling distributions</span></a>
+<ul>
+<li><a href="thinkstats2006.html#sec49"><span style="font-size:medium">The exponential distribution</span></a>
+</li><li><a href="thinkstats2006.html#sec50"><span style="font-size:medium">The normal distribution</span></a>
+</li><li><a href="thinkstats2006.html#sec51"><span style="font-size:medium">Normal probability plot</span></a>
+</li><li><a href="thinkstats2006.html#sec52"><span style="font-size:medium">The lognormal distribution</span></a>
+</li><li><a href="thinkstats2006.html#sec53"><span style="font-size:medium">The Pareto distribution</span></a>
+</li><li><a href="thinkstats2006.html#sec54"><span style="font-size:medium">Generating random numbers</span></a>
+</li><li><a href="thinkstats2006.html#sec55"><span style="font-size:medium">Why model?</span></a>
+</li><li><a href="thinkstats2006.html#sec56"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2006.html#sec57"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2007.html"><span style="font-size:medium">Probability density functions</span></a>
+<ul>
+<li><a href="thinkstats2007.html#sec59"><span style="font-size:medium">PDFs</span></a>
+</li><li><a href="thinkstats2007.html#sec60"><span style="font-size:medium">Kernel density estimation</span></a>
+</li><li><a href="thinkstats2007.html#sec61"><span style="font-size:medium">The distribution framework</span></a>
+</li><li><a href="thinkstats2007.html#sec62"><span style="font-size:medium">Hist implementation</span></a>
+</li><li><a href="thinkstats2007.html#sec63"><span style="font-size:medium">Pmf implementation</span></a>
+</li><li><a href="thinkstats2007.html#sec64"><span style="font-size:medium">Cdf implementation</span></a>
+</li><li><a href="thinkstats2007.html#sec65"><span style="font-size:medium">Moments</span></a>
+</li><li><a href="thinkstats2007.html#sec66"><span style="font-size:medium">Skewness</span></a>
+</li><li><a href="thinkstats2007.html#sec67"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2007.html#sec68"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2008.html"><span style="font-size:medium">Relationships between variables</span></a>
+<ul>
+<li><a href="thinkstats2008.html#sec70"><span style="font-size:medium">Scatter plots</span></a>
+</li><li><a href="thinkstats2008.html#sec71"><span style="font-size:medium">Characterizing relationships</span></a>
+</li><li><a href="thinkstats2008.html#sec72"><span style="font-size:medium">Correlation</span></a>
+</li><li><a href="thinkstats2008.html#sec73"><span style="font-size:medium">Covariance</span></a>
+</li><li><a href="thinkstats2008.html#sec74"><span style="font-size:medium">Pearson’s correlation</span></a>
+</li><li><a href="thinkstats2008.html#sec75"><span style="font-size:medium">Nonlinear relationships</span></a>
+</li><li><a href="thinkstats2008.html#sec76"><span style="font-size:medium">Spearman’s rank correlation</span></a>
+</li><li><a href="thinkstats2008.html#sec77"><span style="font-size:medium">Correlation and causation</span></a>
+</li><li><a href="thinkstats2008.html#sec78"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2008.html#sec79"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2009.html"><span style="font-size:medium">Estimation</span></a>
+<ul>
+<li><a href="thinkstats2009.html#sec81"><span style="font-size:medium">The estimation game</span></a>
+</li><li><a href="thinkstats2009.html#sec82"><span style="font-size:medium">Guess the variance</span></a>
+</li><li><a href="thinkstats2009.html#sec83"><span style="font-size:medium">Sampling distributions</span></a>
+</li><li><a href="thinkstats2009.html#sec84"><span style="font-size:medium">Sampling bias</span></a>
+</li><li><a href="thinkstats2009.html#sec85"><span style="font-size:medium">Exponential distributions</span></a>
+</li><li><a href="thinkstats2009.html#sec86"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2009.html#sec87"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2010.html"><span style="font-size:medium">Hypothesis testing</span></a>
+<ul>
+<li><a href="thinkstats2010.html#sec89"><span style="font-size:medium">Classical hypothesis testing</span></a>
+</li><li><a href="thinkstats2010.html#sec90"><span style="font-size:medium">HypothesisTest</span></a>
+</li><li><a href="thinkstats2010.html#sec91"><span style="font-size:medium">Testing a difference in means</span></a>
+</li><li><a href="thinkstats2010.html#sec92"><span style="font-size:medium">Other test statistics</span></a>
+</li><li><a href="thinkstats2010.html#sec93"><span style="font-size:medium">Testing a correlation</span></a>
+</li><li><a href="thinkstats2010.html#sec94"><span style="font-size:medium">Testing proportions</span></a>
+</li><li><a href="thinkstats2010.html#sec95"><span style="font-size:medium">Chi-squared tests</span></a>
+</li><li><a href="thinkstats2010.html#sec96"><span style="font-size:medium">First babies again</span></a>
+</li><li><a href="thinkstats2010.html#sec97"><span style="font-size:medium">Errors</span></a>
+</li><li><a href="thinkstats2010.html#sec98"><span style="font-size:medium">Power</span></a>
+</li><li><a href="thinkstats2010.html#sec99"><span style="font-size:medium">Replication</span></a>
+</li><li><a href="thinkstats2010.html#sec100"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2010.html#sec101"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2011.html"><span style="font-size:medium">Linear least squares</span></a>
+<ul>
+<li><a href="thinkstats2011.html#sec103"><span style="font-size:medium">Least squares fit</span></a>
+</li><li><a href="thinkstats2011.html#sec104"><span style="font-size:medium">Implementation</span></a>
+</li><li><a href="thinkstats2011.html#sec105"><span style="font-size:medium">Residuals</span></a>
+</li><li><a href="thinkstats2011.html#sec106"><span style="font-size:medium">Estimation</span></a>
+</li><li><a href="thinkstats2011.html#sec107"><span style="font-size:medium">Goodness of fit</span></a>
+</li><li><a href="thinkstats2011.html#sec108"><span style="font-size:medium">Testing a linear model</span></a>
+</li><li><a href="thinkstats2011.html#sec109"><span style="font-size:medium">Weighted resampling</span></a>
+</li><li><a href="thinkstats2011.html#sec110"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2011.html#sec111"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2012.html"><span style="font-size:medium">Regression</span></a>
+<ul>
+<li><a href="thinkstats2012.html#sec113"><span style="font-size:medium">StatsModels</span></a>
+</li><li><a href="thinkstats2012.html#sec114"><span style="font-size:medium">Multiple regression</span></a>
+</li><li><a href="thinkstats2012.html#sec115"><span style="font-size:medium">Nonlinear relationships</span></a>
+</li><li><a href="thinkstats2012.html#sec116"><span style="font-size:medium">Data mining</span></a>
+</li><li><a href="thinkstats2012.html#sec117"><span style="font-size:medium">Prediction</span></a>
+</li><li><a href="thinkstats2012.html#sec118"><span style="font-size:medium">Logistic regression</span></a>
+</li><li><a href="thinkstats2012.html#sec119"><span style="font-size:medium">Estimating parameters</span></a>
+</li><li><a href="thinkstats2012.html#sec120"><span style="font-size:medium">Implementation</span></a>
+</li><li><a href="thinkstats2012.html#sec121"><span style="font-size:medium">Accuracy</span></a>
+</li><li><a href="thinkstats2012.html#sec122"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2012.html#sec123"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2013.html"><span style="font-size:medium">Time series analysis</span></a>
+<ul>
+<li><a href="thinkstats2013.html#sec125"><span style="font-size:medium">Importing and cleaning</span></a>
+</li><li><a href="thinkstats2013.html#sec126"><span style="font-size:medium">Plotting</span></a>
+</li><li><a href="thinkstats2013.html#sec127"><span style="font-size:medium">Linear regression</span></a>
+</li><li><a href="thinkstats2013.html#sec128"><span style="font-size:medium">Moving averages</span></a>
+</li><li><a href="thinkstats2013.html#sec129"><span style="font-size:medium">Missing values</span></a>
+</li><li><a href="thinkstats2013.html#sec130"><span style="font-size:medium">Serial correlation</span></a>
+</li><li><a href="thinkstats2013.html#sec131"><span style="font-size:medium">Autocorrelation</span></a>
+</li><li><a href="thinkstats2013.html#sec132"><span style="font-size:medium">Prediction</span></a>
+</li><li><a href="thinkstats2013.html#sec133"><span style="font-size:medium">Further reading</span></a>
+</li><li><a href="thinkstats2013.html#sec134"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2013.html#sec135"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2014.html"><span style="font-size:medium">Survival analysis</span></a>
+<ul>
+<li><a href="thinkstats2014.html#sec137"><span style="font-size:medium">Survival curves</span></a>
+</li><li><a href="thinkstats2014.html#sec138"><span style="font-size:medium">Hazard function</span></a>
+</li><li><a href="thinkstats2014.html#sec139"><span style="font-size:medium">Inferring survival curves</span></a>
+</li><li><a href="thinkstats2014.html#sec140"><span style="font-size:medium">Kaplan-Meier estimation</span></a>
+</li><li><a href="thinkstats2014.html#sec141"><span style="font-size:medium">The marriage curve</span></a>
+</li><li><a href="thinkstats2014.html#sec142"><span style="font-size:medium">Estimating the survival curve</span></a>
+</li><li><a href="thinkstats2014.html#sec143"><span style="font-size:medium">Confidence intervals</span></a>
+</li><li><a href="thinkstats2014.html#sec144"><span style="font-size:medium">Cohort effects</span></a>
+</li><li><a href="thinkstats2014.html#sec145"><span style="font-size:medium">Extrapolation</span></a>
+</li><li><a href="thinkstats2014.html#sec146"><span style="font-size:medium">Expected remaining lifetime</span></a>
+</li><li><a href="thinkstats2014.html#sec147"><span style="font-size:medium">Exercises</span></a>
+</li><li><a href="thinkstats2014.html#sec148"><span style="font-size:medium">Glossary</span></a>
+</li></ul>
+</li><li><a href="thinkstats2015.html"><span style="font-size:medium">Analytic methods</span></a>
+<ul>
+<li><a href="thinkstats2015.html#sec150"><span style="font-size:medium">Normal distributions</span></a>
+</li><li><a href="thinkstats2015.html#sec151"><span style="font-size:medium">Sampling distributions</span></a>
+</li><li><a href="thinkstats2015.html#sec152"><span style="font-size:medium">Representing normal distributions</span></a>
+</li><li><a href="thinkstats2015.html#sec153"><span style="font-size:medium">Central limit theorem</span></a>
+</li><li><a href="thinkstats2015.html#sec154"><span style="font-size:medium">Testing the CLT</span></a>
+</li><li><a href="thinkstats2015.html#sec155"><span style="font-size:medium">Applying the CLT</span></a>
+</li><li><a href="thinkstats2015.html#sec156"><span style="font-size:medium">Correlation test</span></a>
+</li><li><a href="thinkstats2015.html#sec157"><span style="font-size:medium">Chi-squared test</span></a>
+</li><li><a href="thinkstats2015.html#sec158"><span style="font-size:medium">Discussion</span></a>
+</li><li><a href="thinkstats2015.html#sec159"><span style="font-size:medium">Exercises</span></a>
+</li></ul>
+</li><li><a href="thinkstats2016.html"><span style="font-size:medium">Index</span></a>
+</li></ul>
+</div>
+<div id="sidebar">
+<p>
+</p><h4>Are you using one of our books in a class?</h4>  We'd like to know
+about it.  Please consider filling out <a href="http://spreadsheets.google.com/viewform?formkey=dC0tNUZkMjBEdXVoRGljNm9FRmlTMHc6MA" onclick="javascript: pageTracker._trackPageview('/outbound/survey');">this short survey</a>.
+
+<p>
+<br/>
+</p><p>
+<a href="http://www.amazon.com/gp/product/1449370780/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1449370780&amp;linkCode=as2&amp;tag=greenteapre01-20">Think Bayes</a><img alt="" border="0" height="1" src="http://ir-na.amazon-adsystem.com/e/ir?t=greenteapre01-20&amp;l=as2&amp;o=1&amp;a=1449370780" style="border:none !important; margin:0px !important;" width="1"/>
+</p><p>
+<a href="http://www.amazon.com/gp/product/1449370780/ref=as_li_qf_sp_asin_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1449370780&amp;linkCode=as2&amp;tag=greenteapre01-20"><img border="0" onerror="this.style.display='none'" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=1449370780&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=greenteapre01-20"/></a><img alt="" border="0" height="1" src="http://ir-na.amazon-adsystem.com/e/ir?t=greenteapre01-20&amp;l=as2&amp;o=1&amp;a=1449370780" style="border:none !important; margin:0px !important;" width="1"/>
+</p><p>
+<a href="http://www.amazon.com/gp/product/144933072X/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=144933072X&amp;linkCode=as2&amp;tag=greenteapre01-20">Think Python</a><img alt="" border="0" height="1" src="http://www.assoc-amazon.com/e/ir?t=greenteapre01-20&amp;l=as2&amp;o=1&amp;a=144933072X" style="border:none !important; margin:0px !important;" width="1"/>
+</p><p>
+<a href="http://www.amazon.com/gp/product/144933072X/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=144933072X&amp;linkCode=as2&amp;tag=greenteapre01-20"><img border="0" onerror="this.style.display='none'" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=144933072X&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=greenteapre01-20"/></a><img alt="" border="0" height="1" src="http://www.assoc-amazon.com/e/ir?t=greenteapre01-20&amp;l=as2&amp;o=1&amp;a=144933072X" style="border:none !important; margin:0px !important;" width="1"/>
+</p><p>
+<a href="http://www.amazon.com/gp/product/1491907339/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1491907339&amp;linkCode=as2&amp;tag=greenteapre01-20&amp;linkId=O7WYM6H6YBYUFNWU">Think Stats</a><img alt="" border="0" height="1" src="http://ir-na.amazon-adsystem.com/e/ir?t=greenteapre01-20&amp;l=as2&amp;o=1&amp;a=1491907339" style="border:none !important; margin:0px !important;" width="1"/>
+</p><p>
+<a href="http://www.amazon.com/gp/product/1491907339/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1491907339&amp;linkCode=as2&amp;tag=greenteapre01-20&amp;linkId=JVSYKQHYSUIEYRHL"><img border="0" onerror="this.style.display='none'" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=1491907339&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=greenteapre01-20"/></a><img alt="" border="0" height="1" src="http://ir-na.amazon-adsystem.com/e/ir?t=greenteapre01-20&amp;l=as2&amp;o=1&amp;a=1491907339" style="border:none !important; margin:0px !important;" width="1"/>
+</p><p>
+<a href="http://www.amazon.com/gp/product/1449314635/ref=as_li_tf_tl?ie=UTF8&amp;tag=greenteapre01-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1449314635">Think Complexity</a><img alt="" border="0" height="1" src="http://www.assoc-amazon.com/e/ir?t=greenteapre01-20&amp;l=as2&amp;o=1&amp;a=1449314635" style="border:none !important; margin:0px !important;" width="1"/>
+</p><p>
+<a href="http://www.amazon.com/gp/product/1449314635/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1449314635&amp;linkCode=as2&amp;tag=greenteapre01-20"><img border="0" onerror="this.style.display='none'" src="http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=1449314635&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=greenteapre01-20"/></a><img alt="" border="0" height="1" src="http://www.assoc-amazon.com/e/ir?t=greenteapre01-20&amp;l=as2&amp;o=1&amp;a=1449314635" style="border:none !important; margin:0px !important;" width="1"/>
+</p></div>
+</div>
+</body>
+<!--FOOTER-->
+<hr style="height:2"/><blockquote class="quote"><em>This document was translated from L<sup>A</sup>T<sub>E</sub>X by
+</em><a href="http://hevea.inria.fr/index.html"><em>H<span style="font-size:small"><sup>E</sup></span>V<span style="font-size:small"><sup>E</sup></span>A</em></a><em>.</em></blockquote>
+</html>
